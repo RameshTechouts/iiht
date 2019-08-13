@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+   						http://www.springframework.org/schema/util
+                   		 http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<util:list id="urlList" value-type="java.util.ArrayList">
+
+		<bean class="com.iiht.model.Model">
+			<property name="url">
+				<value>http://203.192.246.136:8000/magentoLogin</value>
+			</property>
+			<property name="alias">
+				<value>MagentoLogin</value>
+			</property>
+		</bean>
+		<bean class="com.iiht.model.Model">
+			<property name="url">
+				<value>http://203.192.246.136:8000/createIdmUser</value>
+			</property>
+			<property name="alias">
+				<value>Create_Idm_User</value>
+			</property>
+		</bean>
+		<bean class="com.iiht.model.Model">
+			<property name="url">
+				<value>http://203.192.246.136:8000/idmAuthenticate</value>
+			</property>
+			<property name="alias">
+				<value>Idm_Authenticate</value>
+			</property>
+		</bean>
+
+	</util:list>
+
+</beans>
